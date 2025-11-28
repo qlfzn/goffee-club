@@ -1,0 +1,529 @@
+{
+  "menu_items": [
+    {
+      "id": 1,
+      "name": "Classic Espresso",
+      "description": "Rich, bold shot of pure coffee perfection. Our signature blend roasted locally.",
+      "category": "Coffee",
+      "base_price": 3.50,
+      "image_url": "https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04",
+      "is_available": true,
+      "customizations": [1, 2]
+    },
+    {
+      "id": 2,
+      "name": "Cappuccino",
+      "description": "Equal parts espresso, steamed milk, and velvety foam. A morning classic.",
+      "category": "Coffee",
+      "base_price": 4.50,
+      "image_url": "https://images.unsplash.com/photo-1572442388796-11668a67e53d",
+      "is_available": true,
+      "customizations": [1, 2, 3]
+    },
+    {
+      "id": 3,
+      "name": "Caramel Latte",
+      "description": "Smooth espresso with steamed milk and house-made caramel syrup. Sweet indulgence.",
+      "category": "Coffee",
+      "base_price": 5.25,
+      "image_url": "https://images.unsplash.com/photo-1461023058943-07fcbe16d735",
+      "is_available": true,
+      "customizations": [1, 2, 3, 4]
+    },
+    {
+      "id": 4,
+      "name": "Iced Americano",
+      "description": "Espresso shots over ice, topped with cold water. Simple, strong, refreshing.",
+      "category": "Coffee",
+      "base_price": 4.00,
+      "image_url": "https://images.unsplash.com/photo-1517487881594-2787fef5ebf7",
+      "is_available": true,
+      "customizations": [1, 2, 3]
+    },
+    {
+      "id": 5,
+      "name": "Flat White",
+      "description": "Velvety microfoam poured over a double ristretto. Bold yet smooth.",
+      "category": "Coffee",
+      "base_price": 4.75,
+      "image_url": "https://images.unsplash.com/photo-1559496417-e7f25c6c740c",
+      "is_available": true,
+      "customizations": [2, 3]
+    },
+    {
+      "id": 6,
+      "name": "Mocha",
+      "description": "Rich chocolate meets espresso with steamed milk. Topped with whipped cream.",
+      "category": "Coffee",
+      "base_price": 5.50,
+      "image_url": "https://images.unsplash.com/photo-1607260550778-aa9d29444ce1",
+      "is_available": true,
+      "customizations": [1, 2, 3, 4, 5]
+    },
+    {
+      "id": 7,
+      "name": "Cold Brew",
+      "description": "Smooth, naturally sweet coffee steeped for 16 hours. Served over ice.",
+      "category": "Coffee",
+      "base_price": 4.50,
+      "image_url": "https://images.unsplash.com/photo-1517487881594-2787fef5ebf7",
+      "is_available": true,
+      "customizations": [2, 3]
+    },
+    {
+      "id": 8,
+      "name": "Vanilla Latte",
+      "description": "Creamy latte sweetened with Madagascar vanilla. Comfort in a cup.",
+      "category": "Coffee",
+      "base_price": 5.00,
+      "image_url": "https://images.unsplash.com/photo-1579992357154-faf4bde95b3d",
+      "is_available": true,
+      "customizations": [1, 2, 3, 4]
+    },
+    {
+      "id": 9,
+      "name": "English Breakfast Tea",
+      "description": "Full-bodied black tea blend. Perfect morning companion.",
+      "category": "Tea",
+      "base_price": 3.00,
+      "image_url": "https://images.unsplash.com/photo-1594631661960-247f9c2f5e50",
+      "is_available": true,
+      "customizations": [1, 2]
+    },
+    {
+      "id": 10,
+      "name": "Chamomile Tea",
+      "description": "Calming herbal infusion with gentle floral notes. Naturally caffeine-free.",
+      "category": "Tea",
+      "base_price": 3.25,
+      "image_url": "https://images.unsplash.com/photo-1597318112274-6e94e4c2f908",
+      "is_available": true,
+      "customizations": [1]
+    },
+    {
+      "id": 11,
+      "name": "Matcha Latte",
+      "description": "Premium Japanese matcha whisked with steamed milk. Earthy and energizing.",
+      "category": "Tea",
+      "base_price": 5.25,
+      "image_url": "https://images.unsplash.com/photo-1536013734839-4187e92e0ff4",
+      "is_available": true,
+      "customizations": [1, 2, 3, 4]
+    },
+    {
+      "id": 12,
+      "name": "Earl Grey",
+      "description": "Classic black tea infused with bergamot. Sophisticated and aromatic.",
+      "category": "Tea",
+      "base_price": 3.25,
+      "image_url": "https://images.unsplash.com/photo-1597318112274-6e94e4c2f908",
+      "is_available": true,
+      "customizations": [1, 2]
+    },
+    {
+      "id": 13,
+      "name": "Chai Latte",
+      "description": "Spiced black tea with cinnamon, cardamom, and ginger. Warming and aromatic.",
+      "category": "Tea",
+      "base_price": 4.75,
+      "image_url": "https://images.unsplash.com/photo-1578899952107-9d0d2f8d9d96",
+      "is_available": true,
+      "customizations": [1, 2, 3, 4]
+    },
+    {
+      "id": 14,
+      "name": "Butter Croissant",
+      "description": "Flaky, buttery layers baked fresh every morning. Light and golden.",
+      "category": "Pastries",
+      "base_price": 3.75,
+      "image_url": "https://images.unsplash.com/photo-1555507036-ab1f4038808a",
+      "is_available": true,
+      "customizations": []
+    },
+    {
+      "id": 15,
+      "name": "Chocolate Croissant",
+      "description": "Classic croissant filled with dark chocolate batons. Indulgent morning treat.",
+      "category": "Pastries",
+      "base_price": 4.25,
+      "image_url": "https://images.unsplash.com/photo-1623334044303-241021148842",
+      "is_available": true,
+      "customizations": []
+    },
+    {
+      "id": 16,
+      "name": "Blueberry Muffin",
+      "description": "Moist muffin bursting with fresh blueberries. Lightly sweetened.",
+      "category": "Pastries",
+      "base_price": 3.50,
+      "image_url": "https://images.unsplash.com/photo-1607958996333-41aef7caefaa",
+      "is_available": true,
+      "customizations": []
+    },
+    {
+      "id": 17,
+      "name": "Banana Bread",
+      "description": "House-made with ripe bananas and walnuts. Moist and comforting.",
+      "category": "Pastries",
+      "base_price": 3.75,
+      "image_url": "https://images.unsplash.com/photo-1606890737304-57a1ca8a5b62",
+      "is_available": true,
+      "customizations": []
+    },
+    {
+      "id": 18,
+      "name": "Almond Biscotti",
+      "description": "Twice-baked Italian cookie with toasted almonds. Perfect for dunking.",
+      "category": "Pastries",
+      "base_price": 2.75,
+      "image_url": "https://images.unsplash.com/photo-1558961363-fa8fdf82db35",
+      "is_available": true,
+      "customizations": []
+    },
+    {
+      "id": 19,
+      "name": "Cinnamon Roll",
+      "description": "Soft, pillowy roll swirled with cinnamon sugar and topped with cream cheese frosting.",
+      "category": "Pastries",
+      "base_price": 4.50,
+      "image_url": "https://images.unsplash.com/photo-1626094309830-abbb0c99da4a",
+      "is_available": true,
+      "customizations": []
+    },
+    {
+      "id": 20,
+      "name": "Avocado Toast",
+      "description": "Smashed avocado on sourdough with cherry tomatoes, feta, and chili flakes.",
+      "category": "Food",
+      "base_price": 8.50,
+      "image_url": "https://images.unsplash.com/photo-1541519227354-08fa5d50c44d",
+      "is_available": true,
+      "customizations": [6]
+    },
+    {
+      "id": 21,
+      "name": "Breakfast Sandwich",
+      "description": "Scrambled eggs, cheddar cheese, and your choice of bacon or sausage on a toasted English muffin.",
+      "category": "Food",
+      "base_price": 7.50,
+      "image_url": "https://images.unsplash.com/photo-1619096252214-ef06c45683e3",
+      "is_available": true,
+      "customizations": [7]
+    },
+    {
+      "id": 22,
+      "name": "Açaí Bowl",
+      "description": "Thick açaí blend topped with granola, fresh berries, banana, and honey.",
+      "category": "Food",
+      "base_price": 9.00,
+      "image_url": "https://images.unsplash.com/photo-1590301157890-4810ed352733",
+      "is_available": true,
+      "customizations": []
+    },
+    {
+      "id": 23,
+      "name": "Bagel with Cream Cheese",
+      "description": "Fresh-baked bagel with house-whipped cream cheese. Simple perfection.",
+      "category": "Food",
+      "base_price": 4.50,
+      "image_url": "https://images.unsplash.com/photo-1600629080398-c49842021b8a",
+      "is_available": true,
+      "customizations": [8]
+    },
+    {
+      "id": 24,
+      "name": "Hot Chocolate",
+      "description": "Rich Belgian chocolate melted into steamed milk. Topped with whipped cream.",
+      "category": "Specialty",
+      "base_price": 4.50,
+      "image_url": "https://images.unsplash.com/photo-1517578239113-b03992dcdd25",
+      "is_available": true,
+      "customizations": [2, 5]
+    },
+    {
+      "id": 25,
+      "name": "Golden Milk Latte",
+      "description": "Turmeric, ginger, cinnamon, and honey blended with steamed milk. Anti-inflammatory goodness.",
+      "category": "Specialty",
+      "base_price": 5.00,
+      "image_url": "https://images.unsplash.com/photo-1546173159-315724a31696",
+      "is_available": true,
+      "customizations": [2, 4]
+    },
+    {
+      "id": 26,
+      "name": "Beetroot Latte",
+      "description": "Earthy beetroot powder with vanilla and steamed milk. Instagram-worthy pink drink.",
+      "category": "Specialty",
+      "base_price": 5.25,
+      "image_url": "https://images.unsplash.com/photo-1544787219-7f47ccb76574",
+      "is_available": false,
+      "customizations": [2, 4]
+    },
+    {
+      "id": 27,
+      "name": "Affogato",
+      "description": "Vanilla gelato drowned in a hot shot of espresso. Italian dessert-drink hybrid.",
+      "category": "Specialty",
+      "base_price": 5.50,
+      "image_url": "https://images.unsplash.com/photo-1514849302-984523450cf4",
+      "is_available": true,
+      "customizations": [1]
+    }
+  ],
+  "customizations": [
+    {
+      "id": 1,
+      "name": "Size",
+      "type": "single",
+      "options": [
+        {
+          "id": 1,
+          "name": "Small (8oz)",
+          "price_modifier": 0.00
+        },
+        {
+          "id": 2,
+          "name": "Medium (12oz)",
+          "price_modifier": 0.50
+        },
+        {
+          "id": 3,
+          "name": "Large (16oz)",
+          "price_modifier": 1.00
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Milk Type",
+      "type": "single",
+      "options": [
+        {
+          "id": 4,
+          "name": "Whole Milk",
+          "price_modifier": 0.00
+        },
+        {
+          "id": 5,
+          "name": "Oat Milk",
+          "price_modifier": 0.75
+        },
+        {
+          "id": 6,
+          "name": "Almond Milk",
+          "price_modifier": 0.75
+        },
+        {
+          "id": 7,
+          "name": "Soy Milk",
+          "price_modifier": 0.50
+        },
+        {
+          "id": 8,
+          "name": "Coconut Milk",
+          "price_modifier": 0.75
+        },
+        {
+          "id": 9,
+          "name": "Skim Milk",
+          "price_modifier": 0.00
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Temperature",
+      "type": "single",
+      "options": [
+        {
+          "id": 10,
+          "name": "Hot",
+          "price_modifier": 0.00
+        },
+        {
+          "id": 11,
+          "name": "Iced",
+          "price_modifier": 0.00
+        },
+        {
+          "id": 12,
+          "name": "Extra Hot",
+          "price_modifier": 0.00
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Sweetness",
+      "type": "single",
+      "options": [
+        {
+          "id": 13,
+          "name": "Regular Sweet",
+          "price_modifier": 0.00
+        },
+        {
+          "id": 14,
+          "name": "Less Sweet (75%)",
+          "price_modifier": 0.00
+        },
+        {
+          "id": 15,
+          "name": "Half Sweet (50%)",
+          "price_modifier": 0.00
+        },
+        {
+          "id": 16,
+          "name": "Light Sweet (25%)",
+          "price_modifier": 0.00
+        },
+        {
+          "id": 17,
+          "name": "No Sugar",
+          "price_modifier": 0.00
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Add-ons",
+      "type": "multiple",
+      "options": [
+        {
+          "id": 18,
+          "name": "Extra Shot",
+          "price_modifier": 0.75
+        },
+        {
+          "id": 19,
+          "name": "Whipped Cream",
+          "price_modifier": 0.50
+        },
+        {
+          "id": 20,
+          "name": "Caramel Drizzle",
+          "price_modifier": 0.50
+        },
+        {
+          "id": 21,
+          "name": "Chocolate Drizzle",
+          "price_modifier": 0.50
+        },
+        {
+          "id": 22,
+          "name": "Vanilla Syrup",
+          "price_modifier": 0.50
+        },
+        {
+          "id": 23,
+          "name": "Hazelnut Syrup",
+          "price_modifier": 0.50
+        },
+        {
+          "id": 24,
+          "name": "Cinnamon Powder",
+          "price_modifier": 0.00
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Protein Add-on",
+      "type": "single",
+      "options": [
+        {
+          "id": 25,
+          "name": "No Protein",
+          "price_modifier": 0.00
+        },
+        {
+          "id": 26,
+          "name": "Poached Egg",
+          "price_modifier": 2.00
+        },
+        {
+          "id": 27,
+          "name": "Smoked Salmon",
+          "price_modifier": 3.50
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Protein Choice",
+      "type": "single",
+      "options": [
+        {
+          "id": 28,
+          "name": "Bacon",
+          "price_modifier": 0.00
+        },
+        {
+          "id": 29,
+          "name": "Sausage",
+          "price_modifier": 0.00
+        },
+        {
+          "id": 30,
+          "name": "No Meat (Vegetarian)",
+          "price_modifier": -1.00
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Bagel Type",
+      "type": "single",
+      "options": [
+        {
+          "id": 31,
+          "name": "Plain",
+          "price_modifier": 0.00
+        },
+        {
+          "id": 32,
+          "name": "Sesame",
+          "price_modifier": 0.00
+        },
+        {
+          "id": 33,
+          "name": "Everything",
+          "price_modifier": 0.00
+        },
+        {
+          "id": 34,
+          "name": "Cinnamon Raisin",
+          "price_modifier": 0.25
+        }
+      ]
+    }
+  ],
+  "categories": [
+    {
+      "name": "Coffee",
+      "description": "Espresso-based drinks and brewed coffee",
+      "display_order": 1
+    },
+    {
+      "name": "Tea",
+      "description": "Loose leaf teas and specialty tea drinks",
+      "display_order": 2
+    },
+    {
+      "name": "Specialty",
+      "description": "Unique drinks and seasonal favorites",
+      "display_order": 3
+    },
+    {
+      "name": "Pastries",
+      "description": "Fresh-baked goods and sweet treats",
+      "display_order": 4
+    },
+    {
+      "name": "Food",
+      "description": "Breakfast and light meals",
+      "display_order": 5
+    }
+  ]
+}

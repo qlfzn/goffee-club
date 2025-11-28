@@ -6,6 +6,7 @@ import (
 
 	"github.com/go-chi/chi/v5"
 	"github.com/qlfzn/goffee-club/internal/orders"
+	"github.com/qlfzn/goffee-club/internal/products"
 )
 
 type Application struct {
@@ -26,6 +27,10 @@ func (app *Application) Mount() http.Handler {
 	orderService := orders.NewService()
 	orderHandler := orders.NewHandler(orderService)
 	r.Post("/orders", orderHandler.CreateNewOrder)
+
+	productService := products.NewService()
+	productHandler := products.NewHandler(productService)
+	r.Get("/products", productHandler.GetProductsHandler)
 
 	return r
 }

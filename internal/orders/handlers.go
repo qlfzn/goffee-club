@@ -38,12 +38,14 @@ func (h *handler) CreateNewOrder(w http.ResponseWriter, r *http.Request) {
 		err := json.NewDecoder(r.Body).Decode(&order)
 		if err != nil {
 			http.Error(w, err.Error(), http.StatusBadRequest)
+			return
 		}
 
 		// call order service
 		checkOrder, err := h.service.CreateNewOrder(&order)
 		if err != nil {
 			http.Error(w, err.Error(), http.StatusBadRequest)
+			return
 		}
 
 		// return response to client
