@@ -1,7 +1,6 @@
 package api
 
 import (
-	"encoding/json"
 	"log"
 	"net/http"
 
@@ -22,28 +21,11 @@ func (app *Application) Mount() http.Handler {
 	r.Get("/", func(w http.ResponseWriter, r *http.Request) {
 		w.Write([]byte("hello world!"))
 	})
-	r.Post("/orders", func(w http.ResponseWriter, r *http.Request) {
-		var order orders.NewOrder
-		err := json.NewDecoder(r.Body).Decode(&order)
-		if err != nil {
-			http.Error(w, err.Error(), http.StatusBadRequest)
-		}
-
-		// call order service
-		orderDetails := &orders.OrderDetails{}
-		checkOrder, err := orderDetails.CreateNewOrder(&order)
-		if err != nil {
-			http.Error(w, err.Error(), http.StatusBadRequest)
-		}
-
-		// return response to client
-		w.Header().Set("Content-Type", "application/json")
-		w.Write([]byte("Received order!"))
-		err = json.NewEncoder(w).Encode(&checkOrder)
-		if err != nil {
-			http.Error(w, err.Error(), http.StatusInternalServerError)
-		}
-	})
+	
+	// declare services & handlers
+	orderService := orders.NewService()
+	orderHandler := orders.NewHandler(orderService)
+	r.Post("/orders", orderHandler.CreateNewOrder)
 
 	return r
 }
