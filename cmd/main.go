@@ -12,6 +12,7 @@ func main() {
 	}
 
 	r := app.Mount()
+
 	err := app.Run(r)
 	if err != nil {
 		log.Fatalf("error running server: %s", err)
