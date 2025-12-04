@@ -26,7 +26,7 @@ Inspired by neighborhood cafés, this system aims to streamline the ordering exp
 ### Sprint 1 (Current)
 - [x] Basic menu endpoints
 - [x] Order creation & retrieval
-- [ ] Database schema & migrations
+- [x] Database schema & migrations
 - [ ] API documentation setup
 
 ### Sprint 2
