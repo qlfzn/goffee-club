@@ -35,7 +35,11 @@ func NewDBPool(ctx context.Context, cfg DBConfig) (*pgxpool.Pool, error) {
 
 	dbpool, err := pgxpool.NewWithConfig(ctx, config)
 	if err != nil {
-		return nil, fmt.Errorf("unable to create connection pool: %v\n", err)
+		return nil, fmt.Errorf("unable to create connection pool: %v", err)
+	}
+	
+	if err := dbpool.Ping(ctx); err != nil {
+		return nil, fmt.Errorf("unable to ping database: %v", err)
 	}
 
 	return dbpool, nil
