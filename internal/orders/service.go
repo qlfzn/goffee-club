@@ -3,6 +3,8 @@ package orders
 import (
 	"errors"
 	"strconv"
+
+	"github.com/jackc/pgx/v5/pgxpool"
 )
 
 type Service interface{
@@ -10,7 +12,7 @@ type Service interface{
 }
 
 type svc struct {
-	// declare dependencies for service module
+	DB *pgxpool.Pool
 }
 
 func NewService() Service {
@@ -21,6 +23,9 @@ func (s *svc) CreateNewOrder(order *NewOrder) (OrderDetails, error) {
 	if order == nil {
 		return OrderDetails{}, errors.New("order is nil")
 	}
+
+	// call repo to store and update with new order
+	
 
 	price, _ := strconv.ParseFloat(order.Price, 64)
 

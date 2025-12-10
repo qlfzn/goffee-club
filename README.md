@@ -1,10 +1,6 @@
 # ☕️ Cafe Order Management API
 
-An order management system for neighborhood cafés, built with Go. This API enables customers to place orders, track their status in real-time, and helps baristas manage the order queue efficiently.
-
-## Objective
-
-Inspired by neighborhood cafés, this system aims to streamline the ordering experience while preserving the personal touch that makes local coffee shops special. Features include smart order suggestions, barista notes, and seamless order experience.
+An order management system for neighborhood cafés, built with Go. This API enables customers to place orders, track their order status, and helps baristas manage the order queue efficiently.
 
 ## Features
 
@@ -40,6 +36,8 @@ Inspired by neighborhood cafés, this system aims to streamline the ordering exp
 - [ ] Staff dashboard
 - [ ] Real-time queue updates
 - [ ] Menu availability toggle
+
+## Future Improvements
 
 ### Phase 2
 - [ ] Customer profiles & authentication
